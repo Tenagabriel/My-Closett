@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My-Closet</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Load a font called Roboto from Google Fonts. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Here are the CSS files for this page. -->
+  <link rel="stylesheet" href="styles/main-header.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/footer.css">
+
+  </head>
+  <body>
+   <header>
+     <div class="closet-header">
+      <div class="closet-left-section">
+        <h1 class="brand-name">My-Closet</h1>
+        <p class="closet-motto">Finding you the perfect outfit for any occasion!</p>
+      </div>
+      <div class="closet-middle-section">
+        <input class="search-bar" placeholder="Search your occasion" type="text" aria-label="Search for an occasion or outfit">
+        <button class="search-button">
+          <img class="search-icon" src="images/icons/search-icon.png">
+        </button>
+      </div>
+      <div class="closet-right-section">
+        <button class="trend-button">See top trends ➔</button>
+        <a href="">
+          <img class="menu-btn" src="images/icons/hamburger-menu.png" alt="">
+        </a>
+      </div>
+     </div>
+   </header>
+   <main>
+    <div class="illustration-grid">
+      <div class="illustration-container">
+        <div class="image-container">
+          <img class="illustration-image" src="images/illustration-images/karen-willis-holmes-dOlFeKIDuRg-unsplash.jpg" alt="">
+        </div>
+         <div class="illustration-desc">
+          <p class="illustration-title">Wedding Guest Gown</p>
+          <div class="illustration-rating">
+            <img class="rating-stars" src="images/ratings/rating-45.png" alt="">
+            <div class="illustration-rating-count">
+              87
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="illustration-container">
+        <div class="image-container">
+          <img class="illustration-image" src="images/illustration-images/lucas-andrade-WSEn7t327uY-unsplash.jpg" alt="">
+        </div>
+         <div class="illustration-desc">
+          <p class="illustration-title">Halloweeen outfit</p>
+          <div class="illustration-rating">
+            <img class="rating-stars" src="images/ratings/rating-40.png" alt="">
+            <div class="illustration-rating-count">
+              62
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="illustration-container">
+        <div class="image-container">
+          <img class="illustration-image" src="images/illustration-images/khalid-boutchich-wS1k0VzXVrA-unsplash.jpg" alt="">
+        </div>
+         <div class="illustration-desc">
+          <p class="illustration-title">Casual Date Night</p>
+          <div class="illustration-rating">
+            <img class="rating-stars" src="images/ratings/rating-35.png" alt="">
+            <div class="illustration-rating-count">
+              81
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+   </main>
+   <footer>
+    <p>© 2025 My-Closet. All rights reserved.</p>
+   </footer>
+
+   <script src="scripts/home-header.js"></script>
+  </body>
+</html>
