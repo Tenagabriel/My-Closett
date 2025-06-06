@@ -75,7 +75,6 @@ main {
   width: 90%; /* 500px */
   display: flex;
   flex-direction: column;
-  border: 1px solid grey;
 }
 
   .illustration-container:hover {
