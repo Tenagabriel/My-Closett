@@ -1,0 +1,15 @@
+.illustration-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.illustration-container {
+  border: 1px solid grey;
+}
+
+.trend-images {
+  width: 210px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
