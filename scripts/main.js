@@ -13,10 +13,24 @@ setInterval(() => {
 
 
 
+const searchButton =document.querySelector('.js-search-button');
+searchButton.addEventListener('click', () => {
+ const searchBar = document.querySelector('.js-search-bar');
+ const value = searchBar.value;
+  if (value) {
+      searchBar.value = '';
+    window.location.href = `filtered.html?Type=${encodeURIComponent(value)}`
+  } else {
+    alert('please, search for an item')
+  }
+
+ 
+})
+
 
 let illustration = ''
 
-illustrationDetails.forEach((Details) => {
+ illustrationDetails.forEach((Details) => {
  illustration += `
   <div class="illustration-container">
         <div class="image-container">

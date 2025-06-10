@@ -165,6 +165,10 @@ body {
   .closet-motto {
     font-size: 0.563rem;
   }
+
+  .trend-link {
+    width: 100%;
+  }
 } 
 
 @media (max-width: 46.89rem) {
@@ -183,6 +187,10 @@ body {
   .closet-motto {
     font-size: 0.44rem;
   }
+  
+  .trend-link {
+    width: 100%;
+  }
 }
 
 @media (max-width: 37.5rem) {
@@ -191,5 +199,9 @@ body {
   }
   .closet-motto {
     font-size: 0.5rem;
+  }
+  
+  .trend-link {
+    width: 100%;
   }
 }
