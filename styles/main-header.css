@@ -3,7 +3,7 @@ html {
 }
 
 html, body {
-  height: 100%; /* Ensure body takes full viewport height */
+  height: 100%; 
 }
 
 body {

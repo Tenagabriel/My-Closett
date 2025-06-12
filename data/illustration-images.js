@@ -109,12 +109,3 @@
   }
 ];
 
-/*
-{
-    id: "12",
-    Type: "gown",
-    image: "images/illustration-images/office-gown-women.jp", 
-    rating: 4.0,
-    ratingCount: 72
-  },
-  */

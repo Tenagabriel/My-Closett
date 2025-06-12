@@ -49,11 +49,11 @@ const aboutPopup = document.querySelector('.about-popup');
 const popupClose = document.querySelector('.popup-close');
 
 sideBarAboutUs.addEventListener('click', () => {
-  aboutPopup.classList.add('is-visible'); // Show pop-up
+  aboutPopup.classList.add('is-visible'); 
 });
 
 popupClose.addEventListener('click', () => {
-  aboutPopup.classList.remove('is-visible'); // Hide pop-up
+  aboutPopup.classList.remove('is-visible'); 
 });
 
 const sideBarContact = document.querySelector('.side-bar-contact')
