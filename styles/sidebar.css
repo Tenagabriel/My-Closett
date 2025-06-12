@@ -1,0 +1,36 @@
+.side-bar {
+  background-color: rgb(129, 89, 89);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 25%;
+  transform: translate(-100%);
+  transition: transform 0.8s ease-out;
+  z-index: 1000;
+}
+
+ .side-bar.is-showing  {
+  transform: translate(0);
+}
+
+.side-bar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.side-bar li {
+  margin-bottom: 20px;
+}
+
+.side-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.13rem;
+}
+
+.side-bar a:hover {
+  color: rgb(172, 150, 153);
+  text-decoration: underline;
+}
+

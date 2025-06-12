@@ -30,6 +30,12 @@ body {
 }
 
 .menu-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.menu-img {
   width: 2.1875rem; 
   margin-left: 0.625rem; 
 }

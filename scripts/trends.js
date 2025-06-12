@@ -22,3 +22,8 @@ searchButton.addEventListener('click', () => {
   }
 })
 
+const menuButton = document.querySelector('.menu-btn');
+const sideBar = document.querySelector('.side-bar')
+ menuButton.addEventListener('click', () => {
+  sideBar.classList.toggle('is-showing');
+ })
