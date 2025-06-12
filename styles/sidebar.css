@@ -23,14 +23,115 @@
   margin-bottom: 20px;
 }
 
-.side-bar a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.13rem;
-}
 
 .side-bar a:hover {
   color: rgb(172, 150, 153);
   text-decoration: underline;
 }
 
+.explore-menu {
+ display: none;
+}
+
+.explore-menu.is-reveal {
+ display: initial;
+}
+
+.explore-menu li {
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.explore-menu a {
+  text-decoration: none;
+  color: rgb(163, 163, 199);
+  padding: 20px;
+}
+
+.explore-menu a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+
+.side-bar-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.side-bar-button:hover {
+  text-decoration: underline;
+  color: rgb(197, 125, 137);
+}
+
+@media (max-width: 600px) {
+  .side-bar {
+    width: 40%;
+  }
+}
+
+.about-popup {
+  display: none; 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2000; /* Above sidebar (z-index: 1000) */
+  justify-content: center;
+  align-items: center;
+}
+
+.about-popup.is-visible {
+  display: flex;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 18.75rem;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content p {
+  margin: 0 0 15px;
+  font-size: 1rem;
+  color: rgb(129, 89, 89);
+}
+
+.popup-close {
+  background-color: rgb(129, 89, 89);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.88rem;
+}
+
+.popup-close:hover {
+  background-color: rgb(83, 44, 44);
+}
+
+.contact-image {
+  width: 20px;
+}
+
+.contact-menu {
+  display: none;
+}
+
+.contact-menu.is-shown {
+  display: initial;
+}
+
+.contact-menu li {
+  margin-top: 15px;
+}
+
+.contact-menu a {
+  padding: 20px;
+}
