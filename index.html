@@ -18,40 +18,70 @@
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/sidebar.css">
+  <link rel="stylesheet" href="styles/user.css">
 
   </head>
   <body>
    <header>
      <div class="closet-header">
-      <div class="closet-left-section">
-        <h1 class="brand-name">My-Closet</h1>
-        <p class="closet-motto">Finding you the perfect outfit for any occasion!</p>
+      <div class="header-top">
+        <div class="closet-left-section">
+          <div class="menu-box">
+            <button class="menu-btn">
+              <img class="menu-img" src="images/icons/hamburger-menu.png" alt="">
+            </button>
+          </div>
+          <h1 class="brand-name">My-Closet</h1>
+          <p class="closet-motto">Finding you the perfect outfit for any occasion!</p>
+        </div>
+        <div class="closet-middle-section">
+          <input class="search-bar js-search-bar" placeholder="Search your occasion" type="text" aria-label="Search for an occasion or outfit">
+          <button class="search-button js-search-button">
+            <img class="search-icon" src="images/icons/search-icon.png">
+          </button>
+        </div>
+        <div class="closet-right-section">
+          <a class="trend-link" href="trends.html">
+             <button class="trend-button js-trend-button">See top trends ➔</button>
+          </a>
+          <button class="user-icon-button">
+            <img class="user-icon-img" src="images/icons/people.png">
+              <div class="user-arrow">
+                <img class="down-arrow-img" src="images/icons/down-arrow.png" alt="">
+                <img class="up-arrow-img" src="images/icons/up-arrow-angle.png" alt="">
+          </button>
+        </div>
+        </div>
       </div>
-      <div class="closet-middle-section">
-        <input class="search-bar js-search-bar" placeholder="Search your occasion" type="text" aria-label="Search for an occasion or outfit">
-        <button class="search-button js-search-button">
-          <img class="search-icon" src="images/icons/search-icon.png">
-        </button>
-      </div>
-      <div class="closet-right-section">
-        <a class="trend-link" href="trends.html">
-           <button class="trend-button js-trend-button">See top trends ➔</button>
-        </a>
-        <button class="menu-btn">
-          <img class="menu-img" src="images/icons/hamburger-menu.png" alt="">
-        </button>
+      <div class="header-bottom">
+        <nav>
+          <ul class="headers-ul">
+            <li><a class="headers-link" href="">Explore</a></li>
+            <li><a class="headers-link" href="">Trending</a></li>
+            <li><a class="headers-link" href="">Womens</a></li>
+            <li><a class="headers-link" href="">Mens</a></li>
+            <li><a class="headers-link" href="">Discover</a></li>
+            <li><a class="headers-link" href="">Brands</a></li>
+            <li><a class="headers-link" href="">About</a></li>
+            <li><a class="headers-link" href="">Explore</a></li>
+            <li><a class="headers-link" href="">contact</a></li>
+          </ul>
+        </nav>
       </div>
      </div>
      <div class="side-bar">
       <ul>
         <li>
-         <button class="side-bar-button side-bar-home">Home</button>
+         <button class="side-bar-button side-bar-home">
+          <p>Home</p>
+          <img class="side-bar-img" src="images/illustration-images/side-bar-eight-removebg-preview.png" alt="">
+        </button>
         </li>
-        <li>
-          <button class="side-bar-button side-bar-trend">Top trends</button>
-        </li>
-        <li>
-          <button class="side-bar-button side-bar-explore">Explore</button>
+           <li>
+          <button class="side-bar-button side-bar-explore">
+            <p>Explore</p>
+            <img class="side-bar-img" src="images/illustration-images/side-bar-one-removebg-preview.png" alt="">
+          </button>
           <ul class="explore-menu">
             <li><a href="filtered.html?Type=gown">Gowns</a></li>
             <li><a href="filtered.html?Type=suit">Suits</a></li>
@@ -61,10 +91,47 @@
           </ul>
         </li>
         <li>
-         <button class="side-bar-button side-bar-about-us">About us</button>
+          <button class="side-bar-button side-bar-trend">
+            <p>Trending</p>
+             <img class="side-bar-img"  src="images/illustration-images/side-bar-three-removebg-preview.png" alt="">
+          </button>
         </li>
         <li>
-          <button class="side-bar-button side-bar-contact">contact us</button>
+        <button class="side-bar-button side-bar-womens">
+          <p>Womens</p>
+          <img class="side-bar-img" src="images/illustration-images/side-bar-woman-one-removebg-preview.png" alt="">
+        </button>
+      </li>
+        <li>
+        <button class="side-bar-button side-bar-mens">
+          <p>Mens</p>
+          <img class="side-bar-img" src="images/illustration-images/side-bar-five-removebg-preview.png" alt="">
+        </button>
+      </li>
+          <li>
+         <button class="side-bar-button side-bar-Discover">
+          <p>Discover</p>
+          <img class="side-bar-img" src="images/illustration-images/side-bar-six-removebg-preview.png" alt="">
+         </button>
+        </li>
+        <li>
+         <button class="side-bar-button 
+         side-bar-about-us">
+         <p>Brands</p>
+        <img class="side-bar-img" src="images/illustration-images/side-bar-seven-removebg-preview.png" alt="">
+        </button>
+        </li>
+          <li>
+         <button class="side-bar-button side-bar-about-us">
+          <p>About us</p>
+          <img class="side-bar-img" src="images/illustration-images/side-bar-nine-removebg-preview.png" alt="">
+        </button>
+        </li>
+        <li>
+          <button class="side-bar-button side-bar-contact">
+            <p>contact us</p>
+            <img class="side-bar-img" src="images/illustration-images/side-bar-two-removebg-preview.png" alt="">
+          </button>
           <ul class="contact-menu">
             <li>
               <a href="https://x.com/Gabi_4Real" target="_blank">
@@ -80,7 +147,37 @@
         </li>
       </ul>
      </div>
+     <div></div>
    </header>
+   <div class="signup-popup">
+     <div class="main-sign-in-box">
+      <div class="sign-in-box">Sign in</div>
+     </div>
+     <div class="sign-up-box">
+      <a class="sign-up-prompt" href="">
+        <div class="icon-container">  
+          <img class="user-icon" src="images/icons/people.png" alt="">
+        </div>
+        <p class="sign-up-text">Sign up</p>
+      </a>
+     </div>
+     <div>
+        <a class="sign-up-prompt" href="">
+        <div class="icon-container">  
+          <img class="user-icon" src="images/icons/heart-icon.png" alt="">
+        </div>
+          <p class="sign-up-text">My likes</p>
+      </a>
+     </div>
+     <div>
+       <a class="sign-up-prompt" href="">
+        <div class="icon-container">  
+          <img class="faq-icon" src="images/icons/faq icon.png" alt="">
+        </div>
+          <p class="sign-up-text">FAQ</p>
+      </a>
+     </div>
+   </div>
    <div class="about-popup">
   <div class="popup-content">
     <p>My-Closet is your go-to platform that helps you find the perfect oufit for any occasion, from casual to formal, with style and ease!</p>
@@ -88,6 +185,20 @@
   </div>
 </div>
    <main>
+    <div class="landing-box">
+      <div class="landing-message-box">
+        <h1 class="landing-headers">Let's Get You Dressed Up</h1>
+        <button class="action-button">Get Started</button>
+      </div>
+      <div class="landing-images-box">
+        <div>
+          <img src="images/illustration-images/landing-page-img-3-removebg-preview.png" alt="">
+        </div>
+        <div>
+          <img src="images/illustration-images/landing-page-img-4-removebg-preview.png" alt="">
+        </div>
+      </div>
+    </div>
     <div class="illustration-grid js-illustration-grid">
     </div>
    </main>

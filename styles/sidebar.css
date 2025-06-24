@@ -1,18 +1,28 @@
 .side-bar {
-  background-color: rgb(129, 89, 89);
+  background-color: white;
   position: fixed;
   left: 0px;
   top: 0px;
   height: 100%;
-  width: 25%;
+  width: 350px;
   transform: translate(-100%);
-  transition: transform 0.8s ease-out;
+  transition: transform 0.4s ease-out;
   z-index: 1000;
+  overflow-y: auto;
 }
+
+.side-bar::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f1f1f1;
+}
+
 
  .side-bar.is-showing  {
   transform: translate(0);
 }
+
+
+
 
 .side-bar ul {
   list-style: none;
@@ -23,11 +33,6 @@
   margin-bottom: 20px;
 }
 
-
-.side-bar a:hover {
-  color: rgb(172, 150, 153);
-  text-decoration: underline;
-}
 
 .explore-menu {
  display: none;
@@ -50,27 +55,32 @@
 
 .explore-menu a:hover {
   text-decoration: underline;
-  color: white;
+  color: rgba(255, 255, 255, 0.808);
 }
 
 
 .side-bar-button {
-  background-color: transparent;
   border: none;
-  color: white;
+  color: rgb(32, 31, 31);
   cursor: pointer;
+  background-color: rgb(245, 250, 248);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 10px;
+  width: 300px;
+}
+
+.side-bar-img {
+  width: 60px;
 }
 
 .side-bar-button:hover {
-  text-decoration: underline;
-  color: rgb(197, 125, 137);
+  filter: brightness(90%);
 }
 
-@media (max-width: 600px) {
-  .side-bar {
-    width: 40%;
-  }
-}
 
 .about-popup {
   display: none; 
@@ -134,4 +144,11 @@
 
 .contact-menu a {
   padding: 20px;
+}
+
+@media (min-width: 46.89rem) {
+  .side-bar {
+  transform: translate(-100%);
+  transition: transform 0.4s ease-out;
+  }
 }

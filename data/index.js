@@ -9,7 +9,7 @@
 },
  {
   image: "images/illustration-images/lucas-andrade-WSEn7t327uY-unsplash.jpg",
-  imageTitle: "Halloweeen outfit",
+  imageTitle: "Halloween outfit",
   ratings: {
     stars: "images/ratings/rating-40.png",
     count: 62

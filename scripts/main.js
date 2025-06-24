@@ -23,15 +23,62 @@ searchButton.addEventListener('click', () => {
   } else {
     alert('please, search for an item')
   }
-
- 
 })
 
-const menuButton = document.querySelector('.menu-btn');
-const sideBar = document.querySelector('.side-bar')
- menuButton.addEventListener('click', () => {
-  sideBar.classList.toggle('is-showing')
- })
+const menuButton = document.querySelector('.menu-btn')
+const sideBar = document.querySelector('.side-bar');
+menuButton.addEventListener('click', () => {
+ sideBar.classList.toggle('is-showing')
+ if (sideBar.classList.contains('is-showing') ) {
+   document.body.style.overflow =  'hidden'
+ }
+})
+
+ 
+const userIcon = document.querySelector('.user-icon-button');
+const signPop = document.querySelector('.signup-popup');
+const downArrow = document.querySelector('.down-arrow-img');
+const upArrow = document.querySelector('.up-arrow-img');
+userIcon.addEventListener('click', () => {
+  downArrow.classList.toggle('is-show');
+  upArrow.classList.toggle('is-showed')
+ signPop.classList.toggle('is-shown')
+ if (signPop.classList.contains('is-shown')) {
+  document.body.style.overflow = 'hidden'
+ }
+})
+
+
+
+document.addEventListener('click', (event) => {
+  const userIconButton = document.querySelector('.user-icon-button');
+  const signupPopup = document.querySelector('.signup-popup');
+  const downArrow = document.querySelector('.down-arrow-img');
+  const upArrow = document.querySelector('.up-arrow-img');
+  const menuButton = document.querySelector('.menu-btn');
+  const sideBar = document.querySelector('.side-bar');
+
+  const isClickInsidePopup = signupPopup.contains(event.target);
+  const isClickOnUserButton = userIconButton.contains(event.target);
+
+  if (!isClickInsidePopup && !isClickOnUserButton && signupPopup.classList.contains('is-shown')) {
+    signupPopup.classList.remove('is-shown');
+    downArrow.classList.remove('is-show');
+    upArrow.classList.remove('is-showed');
+    document.body.style.overflow = '';
+  }
+
+  const isClickInsideSideBar = sideBar.contains(event.target);
+  const isClickOnMenuButton = menuButton.contains(event.target);
+  if (!isClickInsideSideBar && !isClickOnMenuButton && sideBar.classList.contains('is-showing')) {
+    sideBar.classList.remove('is-showing');
+     document.querySelector('.explore-menu').classList.remove('is-reveal');
+    document.querySelector('.contact-menu').classList.remove('is-shown');
+    document.body.style.overflow = '';
+  }
+});
+
+
 
 const sideBarHome = document.querySelector('.side-bar-home');
  sideBarHome.addEventListener('click', () => {
