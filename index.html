@@ -3,17 +3,14 @@
   <head>
     <title>My-Closet</title>
 
-    <!-- This code is needed for responsive design to work.
-      (Responsive design = make the website look good on
-      smaller screen sizes like a phone or a tablet). -->
+  
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Load a font called Roboto from Google Fonts. -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Here are the CSS files for this page. -->
   <link rel="stylesheet" href="styles/main-header.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/footer.css">
@@ -185,22 +182,98 @@
   </div>
 </div>
    <main>
-    <div class="landing-box">
-      <div class="landing-message-box">
-        <h1 class="landing-headers">Let's Get You Dressed Up</h1>
-        <button class="action-button">Get Started</button>
-      </div>
-      <div class="landing-images-box">
-        <div>
-          <img src="images/illustration-images/landing-page-img-3-removebg-preview.png" alt="">
+    <section class="Landing-sec">
+      <div class="landing-box">
+        <div class="landing-message-box">
+          <h1 class="landing-headers">Let's Get You Dressed Up
+          </h1>
+          <button class="action-button">Get Started
+          </button>
         </div>
-        <div>
-          <img src="images/illustration-images/landing-page-img-4-removebg-preview.png" alt="">
-        </div>
+           <div class="landing-options">
+            <button class="gender-options">Womens</button>
+            <button class="gender-options">Mens</button>
+          </div>
+             <img class="landing-img-woman" src="images/illustration-images/landing-page-img-3-removebg-preview.png" alt="">
+              <img src="images/illustration-images/landing-page-img-4-removebg-preview.png" alt="">
       </div>
-    </div>
-    <div class="illustration-grid js-illustration-grid">
-    </div>
+    </section>
+    <section class="headline-sec">
+      <div class="headline-box">
+        <h2 class="headline-headers">
+         Rocking every outfit with style.
+        </h2>
+        <p class="headline-text">
+          Let us begin your journey of being outstanding for that special occasion by bringing you up to speed with latest stylings.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="main-content">
+        <div class="left-main-content">
+          <div class="outfits-type-display-box">
+            <img class="outfit-type-display" src="images/illustration-images/fancy-date-night-gown.jpg" alt="">
+          </div>
+          <div class="outfits-type-display-box">
+            <img class="outfit-type-display" src="images/illustration-images/owambe-native-men.jpg" alt="">
+          </div>
+          <div class="outfits-type-display-box">
+            <img class="outfit-type-display" src="images/illustration-images/office-gown-women.jpg" alt="">
+          </div>
+              <div class="outfits-type-display-box">
+            <img class="outfit-type-display" src="images/illustration-images/in-law-visit-gown.jpg" alt="">
+          </div>
+            <div class="outfits-type-display-box outfits-type-display-box-special-two">
+            <img class="outfit-type-display" src="images/illustration-images/university-class-outfit-women.jpg" alt="">
+          </div>
+          <div class="outfits-type-display-box-special">
+            <img class="outfit-type-display-special" src="images/illustration-images/walk-oufit.jpg" alt="">
+          </div>
+        </div>
+        <div class="right-main-content">
+          <input class="category-input" placeholder="Search category" type="text">
+          <h3 class="category-text">Categories</h3>
+          <div class="first-set">
+            <button class="category-buttons">
+            weddings
+            </button>
+              <button class="category-buttons">
+               office wears
+             </button>
+             <button class="category-buttons">
+              Beach wears
+             </button>
+            <button class="category-buttons">
+             Church
+            </button>
+            <button class="category-buttons">seminars</button>
+            <button class="category-buttons">
+              summer
+            </button>
+            <button class="category-buttons">
+              Concerts
+            </button>
+            <button class="category-buttons">
+              Date nights
+            </button>
+            <button class="category-buttons">
+              Gym oufits
+            </button>
+            <button class="category-buttons">
+              Hiking oufits
+            </button>
+            <button class="category-buttons">
+              Haloween
+            </button>
+          </div>
+      </div>
+      </div>
+    </section>
+    <section>
+      <h1 class="popular-category-text">See popular Categories.</h1>
+      <div class="illustration-grid js-illustration-grid">
+      </div>
+    </section>
    </main>
    <footer>
     <p>© 2025 My-Closet. All rights reserved.</p>
