@@ -119,28 +119,37 @@ let illustration = ''
 
  illustrationDetails.forEach((Details) => {
  illustration += `
-  <div class="illustration-container">
-        <div class="image-container">
-          <img class="illustration-image" src="${Details.image}">
-        </div>
-         <div class="illustration-desc">
+    <div class="popular-slide">
+          <img class="illustration-img" src="${Details.image}">
           <p class="illustration-title">${Details.imageTitle}</p>
-          <div class="illustration-rating">
-            <img class="rating-stars" src="${Details.ratings.stars}">
-            <div class="illustration-rating-count">
-              ${Details.ratings.count}
-            </div>
-          </div>
-         </div>
-      </div>
+    </div>
  `
 })
 
 
-const mainGrid = document.querySelector('.js-illustration-grid');
+const mainGrid = document.querySelector('.popular-slider');
 
 if (mainGrid) {
   mainGrid.innerHTML = illustration
 } else {
   console.log('could not find an HTML for this')
 }
+
+const previousButton = document.querySelector('.prev-btn')
+const nextButton = document.querySelector('.nxt-btn');
+const slider = document.querySelector('.popular-slider')
+
+const slideWidth = 300 + 16;
+
+if (previousButton && nextButton && slider) {
+  previousButton.addEventListener('click', () => {
+    slider.scrollLeft -= slideWidth;
+  });
+
+  nextButton.addEventListener('click', () => {
+    slider.scrollLeft += slideWidth; 
+  });
+} else {
+  console.error('Slider elements not found. Check selectors or DOM loading.');
+}
+
