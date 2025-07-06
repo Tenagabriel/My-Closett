@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My-Closet</title>
+    <title>My-Tailor</title>
 
   
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles/footer.css">
   <link rel="stylesheet" href="styles/sidebar.css">
   <link rel="stylesheet" href="styles/user.css">
+  <link rel="stylesheet" href="styles/nav.css">
 
   </head>
   <body>
@@ -28,18 +29,18 @@
               <img class="menu-img" src="images/icons/hamburger-menu.png" alt="">
             </button>
           </div>
-          <h1 class="brand-name">My-Closet</h1>
-          <p class="closet-motto">Finding you the perfect outfit for any occasion!</p>
+          <h1 class="brand-name">My-Tailor</h1>
+          <p class="closet-motto">Finding you the best tailors for any outfit!</p>
         </div>
         <div class="closet-middle-section">
-          <input class="search-bar js-search-bar" placeholder="Search your occasion" type="text" aria-label="Search for an occasion or outfit">
-          <button class="search-button js-search-button">
-            <img class="search-icon" src="images/icons/search-icon.png">
-          </button>
+          <input class="search-bar js-search-bar" placeholder="Search your occasion"  type="text">
+          <span>
+            <img class="search-icon" src="images/icons/search-icon.png" alt="">
+          </span>
         </div>
         <div class="closet-right-section">
           <a class="trend-link" href="trends.html">
-             <button class="trend-button js-trend-button">See top trends ➔</button>
+             <button class="trend-button js-trend-button">See top brands ➔</button>
           </a>
           <button class="user-icon-button">
             <img class="user-icon-img" src="images/icons/people.png">
@@ -53,19 +54,18 @@
       <div class="header-bottom">
         <nav>
           <ul class="headers-ul">
-            <li><a class="headers-link" href="">Explore</a></li>
-            <li><a class="headers-link" href="">Trending</a></li>
-            <li><a class="headers-link" href="">Womens</a></li>
-            <li><a class="headers-link" href="">Mens</a></li>
-            <li><a class="headers-link" href="">Discover</a></li>
-            <li><a class="headers-link" href="">Brands</a></li>
-            <li><a class="headers-link" href="">About</a></li>
-            <li><a class="headers-link" href="">Explore</a></li>
-            <li><a class="headers-link" href="">contact</a></li>
+            <li class="headers-ul-li-explore">Explore</li>
+            <li class="headers-ul-li">Trending</li>
+            <li class="headers-ul-li">Tailoring</li>
+            <li class="headers-ul-li">Womens</li>
+            <li class="headers-ul-li">Mens</li>
+            <li class="headers-ul-li">Discover</li>
+            <li class="headers-ul-li">Brands</li>
+            <li class="headers-ul-li">About</li>
+            <li class="headers-ul-li">Contact</li>
           </ul>
         </nav>
       </div>
-     </div>
      <div class="side-bar">
       <ul>
         <li>
@@ -144,7 +144,6 @@
         </li>
       </ul>
      </div>
-     <div></div>
    </header>
    <div class="signup-popup">
      <div class="main-sign-in-box">
@@ -175,6 +174,83 @@
       </a>
      </div>
    </div>
+   <div class="explore-popup">
+     <div class="womens-box">
+      <h4>Womens wears</h4>
+      <ul>
+        <li>
+          <a class="explore-links" href="">Gowns</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Ankara</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Jeans</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Palazzo</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Suits</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Skirts and blouses</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Swim trunks</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Gym outfits</a>
+        </li>
+      </ul>
+     </div>
+     <div class="mens-box">
+      <h4>Mens wears</h4>
+      <ul>
+        <li>
+          <a class="explore-links" href="">Natives</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Tailored</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Jeans and polo</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Hoodies and sweatshirts</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Gym oufits</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Joggers</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Suits</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Jackets</a>
+        </li>
+      </ul>
+     </div>
+     <div class="brand-box">
+      <h4>Brands</h4>
+      <ul>
+        <li>
+          <a class="explore-links" href="">Castitch Fashion House</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Easy Fits Clothing</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Naires Fashion Concept</a>
+        </li>
+        <li>
+          <a class="explore-links" href="">Sisi Satoria</a>
+        </li>
+      </ul>
+     </div>
+   </div>
    <div class="about-popup">
   <div class="popup-content">
     <p>My-Closet is your go-to platform that helps you find the perfect oufit for any occasion, from casual to formal, with style and ease!</p>
@@ -182,22 +258,22 @@
   </div>
 </div>
    <main>
-    <section class="Landing-sec">
-      <div class="landing-box">
-        <div class="landing-message-box">
-          <h1 class="landing-headers">Let's Get You Dressed Up
-          </h1>
-          <button class="action-button">Get Started
-          </button>
-        </div>
-           <div class="landing-options">
-            <button class="gender-options">Womens</button>
-            <button class="gender-options">Mens</button>
+    <section>
+      <div class="hero">
+        <div class="hero-content">
+          <h1 class="hero-title">Your Shortcut to Quality Tailors</h1>
+          <p class="hero-subtitle">Explore real works, choose with confidence, and connect with skilled tailors in your area.</p>
+          <div class="hero-buttons">
+            <a href="#browse" class="btn primary-btn">Browse Tailors</a>
+            <a href="#upload" class="btn secondary-btn">Upload Your Work</a>
           </div>
-             <img class="landing-img-woman" src="images/illustration-images/landing-page-img-3-removebg-preview.png" alt="">
-              <img src="images/illustration-images/landing-page-img-4-removebg-preview.png" alt="">
+        </div>
+        <div class="hero-bg">
+          <img src="images/illustration-images/female-tailor.jpg" alt="">
+        </div>
       </div>
     </section>
+
     <section class="headline-sec">
       <div class="headline-box">
         <h2 class="headline-headers">
@@ -287,43 +363,50 @@
     </section>
    </main>
    <footer>
-    <div class="foot-box">
-      <div class="foot-boxes">
-        HELP AND INFORMATION
-        <ul>
-          <li>Help</li>
-          <li>Track order</li>
-          <li>Delivery & returns</li>
-          <li>Site map</li>
-        </ul>
+    <div class="footer-ctn">
+      <div class="social-ctn">
+        <img class="social-icons" src="images/icons/facebook.png" alt="">
+        <img class="social-icons" src="images/icons/twitter.png" alt="">
+        <img class="social-icons" src="images/icons/instagram.png" alt="">
       </div>
-      <div class="foot-boxes">
-        ABOUT MY-CLOSET
-         <ul>
-          <li>About us</li>
-          <li>Careers at ASOS</li>
-          <li>Corporate responsibility</li>
-          <li>investors' site</li>
-        </ul>
-      </div>
-      <div class="foot-boxes">
-        MORE FROM MY-CLOSET
-         <ul>
-          <li>mobile and My-Closet apps</li>
-          <li>Gift vouchers</li>
-          <li>Black Friday</li>
-          <li>My-Closet x Thrift</li>
-        </ul>
-      </div>
-      <div class="foot-boxes">
-        PRIVACY AND LEGAL
-         <ul>
-          <li>Privacy Policy</li>
-          <li>Terms & Condition</li>
-          <li>About Cookies</li>
-          <li>Terms of Use</li>
-          <li>Product</li>
-        </ul>
+      <div class="foot-box">
+        <div class="foot-boxes">
+          <h5>HELP AND INFORMATION</h5>
+          <ul>
+            <li>Help</li>
+            <li>Track order</li>
+            <li>Delivery & returns</li>
+            <li>Site map</li>
+          </ul>
+        </div>
+        <div class="foot-boxes">
+          <h5>ABOUT MY-CLOSET</h5>
+           <ul>
+            <li>About us</li>
+            <li>Careers at ASOS</li>
+            <li>Corporate responsibility</li>
+            <li>investors' site</li>
+          </ul>
+        </div>
+        <div class="foot-boxes">
+          <h5>MORE FROM MY-CLOSET</h5>
+           <ul>
+            <li>mobile and My-Closet apps</li>
+            <li>Gift vouchers</li>
+            <li>Black Friday</li>
+            <li>My-Closet x Thrift</li>
+          </ul>
+        </div>
+        <div class="foot-boxes">
+          <h5>PRIVACY AND LEGAL</h5>
+           <ul>
+            <li>Privacy Policy</li>
+            <li>Terms & Condition</li>
+            <li>About Cookies</li>
+            <li>Terms of Use</li>
+            <li>Product</li>
+          </ul>
+        </div>
       </div>
     </div>
    </footer>

@@ -1,11 +1,16 @@
+.footer-ctn {
+  margin-top: 20px;
+}
+
 .foot-box {
-  color: black;
+  color: white;
   width: 100%;
   opacity: 0.7;
-  margin-top: 20px;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
+  font-size: 1rem;
+  background-color: rgb(0, 0, 0);
 }
 
 
@@ -16,4 +21,24 @@
 
 .foot-box ul {
   padding-left: 0;
+}
+
+@media (max-width:600px) {
+  .foot-box {
+    font-size: 0.7rem;
+  }
+}
+
+.foot-boxes h5 {
+  font-weight: 800;
+}
+
+.social-icons {
+  width: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.social-ctn {
+  text-align: center;
 }

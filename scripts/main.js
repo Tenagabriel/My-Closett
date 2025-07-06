@@ -13,8 +13,8 @@ setInterval(() => {
 
 
 
-const searchButton =document.querySelector('.js-search-button');
-searchButton.addEventListener('click', () => {
+const searchIcon =document.querySelector('.search-icon');
+searchIcon.addEventListener('click', () => {
  const searchBar = document.querySelector('.js-search-bar');
  const value = searchBar.value;
   if (value) {
@@ -39,13 +39,37 @@ const userIcon = document.querySelector('.user-icon-button');
 const signPop = document.querySelector('.signup-popup');
 const downArrow = document.querySelector('.down-arrow-img');
 const upArrow = document.querySelector('.up-arrow-img');
-userIcon.addEventListener('click', () => {
-  downArrow.classList.toggle('is-show');
-  upArrow.classList.toggle('is-showed')
- signPop.classList.toggle('is-shown')
- if (signPop.classList.contains('is-shown')) {
-  document.body.style.overflow = 'hidden'
- }
+
+userIcon.addEventListener('mouseenter', () => {
+  downArrow.classList.add('is-show');
+  upArrow.classList.add('is-showed');
+ signPop.classList.add('is-shown');
+})
+
+signPop.addEventListener('mouseenter', () => {
+  downArrow.classList.add('is-show');
+  upArrow.classList.add('is-showed');
+  signPop.classList.add('is-shown')
+})
+
+userIcon.addEventListener('mouseleave', () => {
+  if (!userIcon.matches(':hover') && !signPop.matches(':hover')) {
+   setTimeout(() => {
+     downArrow.classList.remove('is-show');
+     upArrow.classList.remove('is-showed')
+     signPop.classList.remove('is-shown')
+   }, 500)
+  }
+})
+
+signPop.addEventListener('mouseleave', () => {
+  if (!signPop.matches(':hover') && !userIcon.matches(':hover')) {
+    setTimeout(() => {
+       downArrow.classList.remove('is-show');
+     upArrow.classList.remove('is-showed')
+     signPop.classList.remove('is-shown')
+    }, 500)
+  }
 })
 
 
@@ -114,6 +138,43 @@ const sideBarMenu = document.querySelector('.contact-menu')
 sideBarContact.addEventListener('click', () => {
   sideBarMenu.classList.toggle('is-shown')
 })
+
+
+
+
+
+const explorePop = document.querySelector('.explore-popup');
+const headersList = document.querySelector('.headers-ul-li-explore')
+
+headersList.addEventListener('mouseenter', () => {
+  explorePop.classList.add('nav-shown');
+});
+
+
+explorePop.addEventListener('mouseenter', () => {
+  explorePop.classList.add('nav-shown')
+})
+
+
+explorePop.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!headersList.matches(':hover') && !explorePop.matches(':hover')) {
+      explorePop.classList.remove('nav-shown');
+    }
+  }, 100);
+});
+
+headersList.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!explorePop.matches(':hover') && !headersList.matches(':hover')) {
+      explorePop.classList.remove('nav-shown');
+    }
+  }, 100);
+});
+
+
+
+
 
 let illustration = ''
 
