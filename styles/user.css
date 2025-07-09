@@ -8,11 +8,7 @@
   display: none;
 }
 
-@media (max-width: 39.75rem) {
-  .signup-popup {
-    top: 130px;
-  }
-}
+
 
 .signup-popup.is-shown {
   display: block;
@@ -24,18 +20,17 @@
   justify-content: center;
 }
 
-.sign-in-box {
+.sign-in-op {
+border: none;
 background-color: orange;
 width: 100px;
-display: flex;
-justify-content: center;
-align-items: center;
-align-content: center;
 padding-top: 8px;
 padding-bottom: 8px;
 padding-left: 30px;
-padding-right: 30px;
+padding-right: 40px;
 border-radius: 4px;
+white-space: nowrap;
+text-align: center;
 }
 
 .sign-up-prompt {
@@ -61,4 +56,83 @@ border-radius: 4px;
 
 .icon-container {
   margin-right: 20px;
+}
+
+
+.reg-fx.is-pop {
+  display: flex;
+}
+
+.reg-fx {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 2000; 
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-reg-popup {
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 30px;
+  width: 350px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+}
+
+.cancel-btn {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+.reg-main-bx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+}
+
+.reg-bx {
+  margin-bottom: 4px;
+  padding: 8px;
+}
+
+.reg-nxt {
+  margin-top: 7px;
+  padding: 8px;
+  background-color: rgb(226, 217, 217);
+  border: none;
+}
+
+.reg-nxt:hover {
+  background-color: rgb(70, 68, 68);
+}
+
+.reg-nxt::placeholder {
+ padding: 150px
+}
+
+.reg-action {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .reg-main-bx {
+    max-width: 80%;
+  }
+
+  .signup-reg-popup {
+    max-width: 90%;
+  }
+
+  .cancel-btn {
+    width: 20px;
+  }
 }

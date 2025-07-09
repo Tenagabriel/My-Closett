@@ -27,7 +27,8 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(24, 24, 26, 0.384);
-  padding: 0.625rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
   margin-bottom: 0;
 }
 
@@ -51,16 +52,17 @@ body {
   padding: 11px 13px;
 }
 
-.headers-ul li:hover{
-  background-color: rgb(70, 68, 68);
-  color: white;
+
+.headers-ul-li-explore.is-hover {
+   background-color: rgb(70, 68, 68);
 }
 
 
 .closet-left-section {
-  line-height: 0;
   margin-left: 0.3125rem; 
+  line-height: 0;
 }
+
 .user-icon-button {
   display: flex;
   justify-content: center;
@@ -86,16 +88,8 @@ body {
   background-color: transparent;
   cursor: pointer;
   display: none;
-  position: absolute; 
-  left: 10px; 
-  top: 10px; 
 }
 
-.menu-box {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 .menu-img {
   width: 2.1875rem;
@@ -125,20 +119,26 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 15.625rem; 
+  position: relative;
 }
 
-.trend-button {
+.see-brand-button {
   padding: 0.5rem; 
   border-radius: 1.875rem;
   border: 0.0625rem solid rgb(129, 89, 89); 
 }
 
-.trend-button:hover {
+.see-brand-button:hover {
   color: white;
   background-color: rgb(129, 89, 89);
-  cursor: pointer;
-  transform: translateY(-0.625rem); 
+  cursor: pointer; 
   transition: all 0.6s ease-out;
+}
+
+.right-search-icon {
+  position: absolute;
+  right: 6.25rem;
+  display: none;
 }
 
 .search-bar {
@@ -197,7 +197,19 @@ body {
   }
 }
 
+
 @media (max-width: 45.625rem) {
+
+  .header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(24, 24, 26, 0.384);
+    padding: 0 0.625rem;
+    margin-bottom: 0;
+    height: 8vh;
+  }
   .brand-name {
     font-size: 1.4rem;
     margin-left: 40px;
@@ -206,25 +218,57 @@ body {
   .header-bottom {
     display: none;
   }
+
+  .closet-left-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    line-height: normal;
+    padding: 0;
+    margin: 0 0 0 0.3125rem;
+  }
   
   .menu-btn {
-    display: block;
-    top: 19px;
-    left: 2px;
+    display: inline-flex;
+    margin-right: 10px;
+    padding: 0;
+    line-height: 1;
   }
 
-  .menu-img {
-  width: 2.0rem;
- }
+  .brand-name {
+    font-size: 1.4rem;
+    margin-left: 0;
+    line-height: 1.5;
+    white-space: nowrap;
+    margin: 0;
+    margin-left: 20px;
+  }
 
   .closet-motto {
     font-size: 0.0rem;
     display: none;
   }
 
-  .search-bar {
-    width: 130px;
+
+  .closet-middle-section {
+    display: none;
   }
+  
+  .see-brand-button {
+    display: none;
+  }
+
+  .right-search-icon {
+    display: initial;
+    width: 30px;
+  }
+
+  .menu-img {
+    width: 18px;
+    vertical-align: middle;
+  }
+
   
 }
 
@@ -232,62 +276,19 @@ body {
   .brand-name {
     font-size: 1.7rem;
   }
-  .closet-motto {
-    font-size: 0.5rem;
-    display: initial;
-  } 
 }
 
-@media (max-width: 39.75rem) { 
+@media (max-width: 31.25rem) { 
   html {
     font-size: 14px;
   }
-
-  .header-top {
-    flex-direction: column;
-    gap: 0.625rem; 
-    padding: 0.625rem; 
-  }
   
-  .trend-link {
-    width: 100%;
-  }
-  
-  .menu-btn {
-    display: block;
-    top: 5px;
-    left: 2px;
-  }
-
   .menu-img {
-  width: 2.0rem;
+  width: 1.8rem;
  }
 
-  .trend-button {
-    width: 100%;
-    text-align: center;
-    padding: 0.375rem; 
-  }
-
-  .brand-name {
-    font-size: 1.7rem;
-    margin-left: 0;
-  }
-
-  .closet-motto {
-    font-size: 0.5rem;
-    display: initial;
-  } 
-
-  .search-bar {
-    font-size: 0.75rem; 
-    height: 1.75rem; 
-    padding-left: 0.75rem; 
-  }
-
-
   .menu-btn {
-    width: 2rem;
+    width: 1.8rem;
     display: block;
   }
 
@@ -295,7 +296,14 @@ body {
     width: 100%;
   }
 
-  .closet-left-section {
-    line-height: 0; 
+  .right-search-icon {
+    width: 25px;
   }
+
+  .brand-name {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
 }

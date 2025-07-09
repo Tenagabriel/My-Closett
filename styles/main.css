@@ -354,7 +354,7 @@ main {
   color: #fff;
   gap: 2rem;
   min-height: 70vh;
-  position: relative; 
+  position: relative;
 }
 
 .hero-content {
@@ -431,13 +431,13 @@ main {
 
 @media (max-width: 1136px) {
   .hero-content {
-    max-width: 45%; /* Full width for content */
+    max-width: 45%;
     border-radius: 8px;
     text-align: center;
   }
 
   .hero-subtitle {
-    font-size: 1rem; /* Smaller subtitle */
+    font-size: 1rem;
     margin-bottom: 1.5rem;
   }
 
@@ -449,7 +449,7 @@ main {
 
 @media (max-width: 788px) {
   .btn {
-    padding: 0.6rem 1.2rem; /* Smaller buttons */
+    padding: 0.6rem 1.2rem; 
   }
 }
 

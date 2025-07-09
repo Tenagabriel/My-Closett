@@ -40,37 +40,14 @@ const signPop = document.querySelector('.signup-popup');
 const downArrow = document.querySelector('.down-arrow-img');
 const upArrow = document.querySelector('.up-arrow-img');
 
-userIcon.addEventListener('mouseenter', () => {
+userIcon.addEventListener('click', () => {
   downArrow.classList.add('is-show');
   upArrow.classList.add('is-showed');
  signPop.classList.add('is-shown');
+ document.body.style.overflow = 'hidden';
 })
 
-signPop.addEventListener('mouseenter', () => {
-  downArrow.classList.add('is-show');
-  upArrow.classList.add('is-showed');
-  signPop.classList.add('is-shown')
-})
 
-userIcon.addEventListener('mouseleave', () => {
-  if (!userIcon.matches(':hover') && !signPop.matches(':hover')) {
-   setTimeout(() => {
-     downArrow.classList.remove('is-show');
-     upArrow.classList.remove('is-showed')
-     signPop.classList.remove('is-shown')
-   }, 500)
-  }
-})
-
-signPop.addEventListener('mouseleave', () => {
-  if (!signPop.matches(':hover') && !userIcon.matches(':hover')) {
-    setTimeout(() => {
-       downArrow.classList.remove('is-show');
-     upArrow.classList.remove('is-showed')
-     signPop.classList.remove('is-shown')
-    }, 500)
-  }
-})
 
 
 
@@ -102,7 +79,16 @@ document.addEventListener('click', (event) => {
   }
 });
 
+const signInOp = document.querySelector('.sign-in-op')
+const signInReg = document.querySelector('.reg-fx')
+const cancelButton = document.querySelector('.cancel-btn');
+signInOp.addEventListener('click', () => {
+  signInReg.classList.add('is-pop')
+})
 
+cancelButton.addEventListener('click', () => {
+  signInReg.classList.remove('is-pop');
+})
 
 const sideBarHome = document.querySelector('.side-bar-home');
  sideBarHome.addEventListener('click', () => {
@@ -148,6 +134,7 @@ const headersList = document.querySelector('.headers-ul-li-explore')
 
 headersList.addEventListener('mouseenter', () => {
   explorePop.classList.add('nav-shown');
+  headersList.classList.add('is-hover');
 });
 
 
@@ -160,6 +147,7 @@ explorePop.addEventListener('mouseleave', () => {
   setTimeout(() => {
     if (!headersList.matches(':hover') && !explorePop.matches(':hover')) {
       explorePop.classList.remove('nav-shown');
+      headersList.classList.remove('is-hover')
     }
   }, 100);
 });
@@ -168,6 +156,7 @@ headersList.addEventListener('mouseleave', () => {
   setTimeout(() => {
     if (!explorePop.matches(':hover') && !headersList.matches(':hover')) {
       explorePop.classList.remove('nav-shown');
+      headersList.classList.remove('is-hover')
     }
   }, 100);
 });

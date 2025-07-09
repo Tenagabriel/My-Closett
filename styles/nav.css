@@ -1,6 +1,6 @@
 .explore-popup {
   position: fixed;
-  top: 115px;
+  top: 95px;
   padding-left: 20px;
   padding-right: 25px;
   width: 90%;
@@ -11,11 +11,16 @@
   display: none;
 }
 
-@media (max-width:897px) {
+
+
+@media (max-width:899px) {
   .explore-popup {
-    top: 114px;
+    top: 92px;
   }
 }
+
+
+
 
 .explore-popup h4 {
   color: white;
@@ -59,3 +64,8 @@
   padding-left: 10px;
 }
 
+@media (max-width: 800px) {
+  .explore-popup {
+    top: 89px;
+  }
+}
